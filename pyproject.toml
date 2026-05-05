@@ -3,18 +3,15 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "image-adjust"  # Match what users will pip install
+name = "image_kit"
 version = "0.1.5"
-description = "Modern Image Processing System with format conversion, filters, and adjustments"
+description = "A simple Notepad app"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
     {name = "Brandon Chew", email = "chewbrandon9911@gmail.com"}
 ]
-dependencies = ["Pillow>=9.0.0"]
+dependencies = []
 
 [project.scripts]
-imagekit = "app:main"
-
-[tool.setuptools.packages.find]
-include = ["app"]
+Image_Kit = "Image_Kit:run"
