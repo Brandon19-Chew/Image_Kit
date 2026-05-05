@@ -11,7 +11,7 @@ license = {text = "MIT"}
 authors = [
     {name = "Brandon Chew", email = "chewbrandon9911@gmail.com"}
 ]
-dependencies = []
+dependencies = ["Pillow>=9.0.0"]  # You need this dependency!
 
 [project.scripts]
-Image_Kit = "Image_Kit:run"
+imagekit = "app:main"  # Creates 'imagekit' command that calls main() from app.py
