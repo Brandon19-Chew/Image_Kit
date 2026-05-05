@@ -825,7 +825,7 @@ class ImageProcessingGUI:
         cw = self.canvas.winfo_width()  or 700
         ch = self.canvas.winfo_height() or 440
         self.canvas.create_text(cw//2, ch//2,
-                                text="Open an image to get started",
+                                text="",
                                 fill=TEXT_MUTED, font=("Segoe UI", 14))
 
     # ── log area ────────────────────────────────
