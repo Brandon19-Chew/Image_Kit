@@ -42,3 +42,9 @@ Sidebar organization:
 
 4. Theme
    - Dark mode UI with GitHub-inspired color scheme using hex codes defined as constants at the top.
+
+---
+
+pip install image-kit
+
+Image_Kit 
