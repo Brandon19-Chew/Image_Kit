@@ -33,25 +33,15 @@ jobs:
     runs-on: ubuntu-latest
     needs:
       - release-build
-    permissions:
-      # IMPORTANT: this permission is mandatory for trusted publishing
-      id-token: write
-
-    environment:
-      name: pypi
-      # Add your PyPI project URL for deployment status
-      url: https://pypi.org/p/imagekit-processor
-      # If your release name matches the version exactly, use:
-      # url: https://pypi.org/project/imagekit-processor/${{ github.event.release.name }}
 
     steps:
       - name: Retrieve release distributions
-        uses: actions/download-artifact@v5  # Updated from v4 to v5
+        uses: actions/download-artifact@v5
         with:
           name: release-dists
           path: dist/
 
-      - name: Publish release distributions to PyPI
+      - name: Publish to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
-          packages-dir: dist/
+          password: ${{ secrets.PYPI_API_TOKEN }}
