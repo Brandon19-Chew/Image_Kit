@@ -1,1 +1,5 @@
-from .app import run
+# __init__.py
+from .app import main
+
+def run():
+    main()
