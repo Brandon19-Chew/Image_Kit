@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "image-adjust"
+name = "Image_Kit"
 version = "0.1.3"
 description = "A simple image edit"
 readme = "README.md"
