@@ -47,6 +47,6 @@ Sidebar organization:
 
 ## Install Guide
 ```bash
-pip install image-kit
+pip install image-adjust
 
 Image_Kit 
