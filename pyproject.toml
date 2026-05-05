@@ -3,15 +3,18 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "Image_Kit"
+name = "image-adjust"  # Match what users will pip install
 version = "0.1.5"
-description = "A simple image edit"
+description = "Modern Image Processing System with format conversion, filters, and adjustments"
 readme = "README.md"
 license = {text = "MIT"}
 authors = [
     {name = "Brandon Chew", email = "chewbrandon9911@gmail.com"}
 ]
-dependencies = ["Pillow>=9.0.0"]  # You need this dependency!
+dependencies = ["Pillow>=9.0.0"]
 
 [project.scripts]
-imagekit = "app:main"  # Creates 'imagekit' command that calls main() from app.py
+imagekit = "app:main"
+
+[tool.setuptools.packages.find]
+include = ["app"]
