@@ -14,4 +14,4 @@ authors = [
 dependencies = []
 
 [project.scripts]
-SM_Notepad = "Image_Kit:run"
+Image_Kit = "Image_Kit:run"
