@@ -45,6 +45,8 @@ Sidebar organization:
 
 ---
 
+## Install Guide
+```bash
 pip install image-kit
 
 Image_Kit 
